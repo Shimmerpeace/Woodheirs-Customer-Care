@@ -1,0 +1,114 @@
+.header {
+  background-color: var(--bg-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-weight: bold;
+}
+
+.brand {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.loginButton {
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid black;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  background-color: var(--bg-tertiary);
+  color: var(--text-secondary);
+  border-bottom: 2px solid var(--gold-20);
+}
+
+.navContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: var(--text-secondary);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--gold-20);
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  display: block;
+}
+
+.mobileMenu {
+  border-top: 1px solid var(--gold-20);
+}
+
+.mobileNavList {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.mobileNavLink {
+  display: block;
+  padding: 0.75rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.mobileNavLink:hover {
+  color: var(--gold-20);
+}
+
+.desktopOnly {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menuButton {
+    display: none;
+  }
+
+  .desktopOnly {
+    display: flex;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
