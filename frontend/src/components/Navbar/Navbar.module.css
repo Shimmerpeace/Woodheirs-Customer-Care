@@ -31,7 +31,7 @@
 }
 
 .navContainer {
-  max-width: 1200px;
+  max-width: var(--primary-maxWidth);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -57,7 +57,7 @@
 .navLink {
   color: var(--text-secondary);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color var(--transition-slow);
 }
 
 .navLink:hover {
@@ -88,7 +88,7 @@
   padding: 0.75rem;
   color: var(--text-secondary);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color var(--transition-slow);
 }
 
 .mobileNavLink:hover {
