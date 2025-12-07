@@ -3,6 +3,6 @@ export interface Certification {
   description: string;
 }
 
-export interface CertificationsSectionProps {
+export interface CertificationsProps {
   // Add props here if needed in the future
 }

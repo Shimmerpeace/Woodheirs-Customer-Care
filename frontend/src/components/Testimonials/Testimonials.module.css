@@ -1,0 +1,93 @@
+.section {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 1.875rem;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 24rem;
+  margin: 0 auto;
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+@media (min-width: 640px) {
+  .prevButton,
+  .nextButton {
+    font-size: 1.5rem;
+  }
+}
+
+.prevButton {
+  left: 0;
+}
+
+.nextButton {
+  right: 0;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  background-color: #1d4ed8;
+}
+
+.testimonialCard {
+  background-color: #fff;
+  font-style: italic;
+  color: #4b5563;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .testimonialCard {
+    padding: 2rem;
+  }
+}
+
+.testimonialText {
+  font-size: 0.875rem;
+  margin: 0 3rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .testimonialText {
+    font-size: 1rem;
+    margin: 0 4rem 1rem;
+  }
+}
+
+.author {
+  margin-top: 1rem;
+  font-style: normal;
+  color: #2563eb;
+  font-weight: 600;
+}

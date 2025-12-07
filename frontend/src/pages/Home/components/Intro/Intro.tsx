@@ -1,4 +1,5 @@
 // Intro.tsx
+
 import styles from "./Intro.module.css";
 // import { type IntroProps } from "./Intro.types";
 
@@ -16,6 +17,7 @@ const Intro: React.FC = () => {
           complex and ongoing process that requires a deep understanding of
           customer needs.
         </p>
+        <button className={styles.coursesBtn}>To the courses</button>
       </div>
     </section>
   );
@@ -23,7 +25,7 @@ const Intro: React.FC = () => {
 
 export default Intro;
 
-/**
+/*
 const Intro: React.FC<IntroProps> = () => { return (); };
 export default Intro;
  */

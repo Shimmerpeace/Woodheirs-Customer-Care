@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
           WoodHeirs Customer Service Training
         </a>
         <div>
-          <button className={styles.loginButton}>Login</button>
+          <button className={styles.loginButton}>Apply Now</button>
         </div>
       </header>
 

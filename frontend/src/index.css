@@ -12,7 +12,8 @@
 }
 :root {
   /* Color Variables */
-  --gold-10:#fda102;;
+  --gold-9:#e6b766;
+  --gold-10:#fda102;
   --gold-20: #fd8802;
   
   /* Color Variables */
@@ -44,6 +45,8 @@
   /* Text Colors */
   --text-primary: #000000;
   --text-secondary: #fda102;
+  --text-tertiary: #4d340a;
+
 
    /* Font Sizes */
    --text-xl: 1.25rem; /* 20px */

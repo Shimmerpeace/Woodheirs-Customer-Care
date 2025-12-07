@@ -1,0 +1,129 @@
+.question {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem 6rem;
+  box-sizing: border-box;
+}
+
+.titleWrapper {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.titleLine {
+  background: var(--gold-9);
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  line-height: 1.3;
+  margin: 0.3rem 0;
+  display: inline-block;
+}
+
+.divider {
+  width: 60%;
+  height: 2px;
+  background: #2a2a2a;
+  margin: 2rem 0;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #222;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+/* -------- Responsive Design -------- */
+
+/* Large screens (≤1280px) */
+@media (max-width: 1280px) {
+  .question {
+    padding: 3rem 1.5rem 5rem;
+  }
+  .titleLine {
+    font-size: 2.2rem;
+  }
+  .subtitle {
+    font-size: 1.15rem;
+    max-width: 550px;
+  }
+}
+
+/* Medium-large screens (≤900px) */
+@media (max-width: 900px) {
+  .question {
+    padding: 3rem 1rem 4rem;
+  }
+  .titleLine {
+    font-size: 2rem;
+    padding: 0.5rem 0.8rem;
+  }
+  .divider {
+    width: 70%;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+    max-width: 500px;
+  }
+}
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  .titleLine {
+    font-size: 1.75rem;
+    line-height: 1.4;
+  }
+  .divider {
+    width: 75%;
+  }
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+/* Small tablets & large phones (≤600px) */
+@media (max-width: 600px) {
+  .question {
+    padding: 2.5rem 1rem 3rem;
+  }
+  .titleLine {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 15px;
+  }
+  .divider {
+    width: 80%;
+  }
+  .subtitle {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
+}
+
+/* Small phones (≤480px) */
+@media (max-width: 480px) {
+  .question {
+    padding: 2rem 0.75rem 2.5rem;
+  }
+  .titleLine {
+    font-size: 1.3rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 12px;
+  }
+  .divider {
+    width: 85%;
+    margin: 1.5rem 0;
+  }
+  .subtitle {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
