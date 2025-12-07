@@ -8,9 +8,9 @@ const Question: React.FC = () => {
           Why do many organizations struggle with customer loyalty?
         </h1>
         <h1 className={styles.titleLine}>
-          Because they handle today's service demands with{" "}
+          Because they handle today's service demands with yesterday's
+          standards.
         </h1>
-        <h1 className={styles.titleLine}>yesterday's standards.</h1>
       </div>
 
       <div className={styles.divider} />
@@ -23,6 +23,9 @@ const Question: React.FC = () => {
           through frameworks that turn inconsistent service into consistent
           growth.
         </p>
+      </div>
+      <div>
+         <button className={styles.aboutUsBtn}>Learn more about us!</button>
       </div>
     </section>
   );
