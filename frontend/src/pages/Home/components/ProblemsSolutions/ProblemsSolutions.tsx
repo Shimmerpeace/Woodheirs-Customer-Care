@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import styles from "./ProblemsSolutions.module.css";
 import { type InfoCard } from "./ProblemsSolutions.types";
 
@@ -47,7 +47,7 @@ const solutions: InfoCard[] = [
 ];
 
 // Reusable card animation settings
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
@@ -56,7 +56,7 @@ const cardVariants = {
   },
 };
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: {},
   visible: {
     transition: {
