@@ -1,0 +1,310 @@
+.aboutPage {
+  min-height: 100vh;
+  padding: 6rem 1.5rem 4rem;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Hero */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.heroMainEyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #38bdf8;
+  margin-bottom: 0.75rem;
+}
+
+.heroTitle {
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.heroTitle span {
+  color: #38bdf8;
+}
+
+.heroTagline {
+  font-size: 1.05rem;
+  color: #9ca3af;
+  max-width: 30rem;
+  margin-bottom: 1.75rem;
+}
+
+.heroMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.heroBadge {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(15, 23, 42, 0.85);
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.heroBadgeDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #22c55e;
+  box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.25);
+}
+
+.heroMetaSub {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.heroPanel {
+  border-radius: 1.25rem;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.18), transparent 55%),
+    rgba(15, 23, 42, 0.9);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.heroPanelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.heroPanelTitle {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #9ca3af;
+}
+
+.heroPanelStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.heroPanelStatusDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: #22c55e;
+}
+
+.heroPanelStatusLabel {
+  color: #22c55e;
+}
+
+.heroPanelKpiRow {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.heroPanelKpi {
+  flex: 1;
+  min-width: 7rem;
+}
+
+.heroPanelKpiLabel {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #6b7280;
+  margin-bottom: 0.35rem;
+}
+
+.heroPanelKpiValue {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.heroPanelPromise {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  border-top: 1px dashed rgba(148, 163, 184, 0.4);
+  padding-top: 0.85rem;
+}
+
+/* Main content sections */
+
+.sections {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 3rem;
+}
+
+/* Story */
+
+.sectionTitle {
+  font-size: 0.95rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 0.85rem;
+}
+
+.sectionHeading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.sectionBody {
+  font-size: 0.98rem;
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+.sectionBody + .sectionBody {
+  margin-top: 0.75rem;
+}
+
+/* Values */
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.valueCard {
+  border-radius: 0.85rem;
+  border: 1px solid rgba(55, 65, 81, 0.9);
+  background: rgba(15, 23, 42, 0.9);
+  padding: 1rem;
+}
+
+.valueTitle {
+  font-size: 0.98rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.valueDescription {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* Sidebar */
+
+.sidebarCard {
+  border-radius: 1rem;
+  border: 1px solid rgba(15, 23, 42, 0.9);
+  background: linear-gradient(150deg, rgba(15, 23, 42, 0.98), rgba(30, 64, 175, 0.9));
+  padding: 1.4rem 1.3rem;
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.sidebarLabel {
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #93c5fd;
+}
+
+.sidebarQuote {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.sidebarAuthor {
+  font-size: 0.9rem;
+  color: #bfdbfe;
+}
+
+.channelGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.channelHeading {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #9ca3af;
+}
+
+.channelRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.channelPill {
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.85rem;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+/* Stats row */
+
+.statsRow {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+}
+
+.statItem {
+  min-width: 8rem;
+}
+
+.statValue {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sections {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .valuesGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .aboutPage {
+    padding-top: 5rem;
+  }
+}
